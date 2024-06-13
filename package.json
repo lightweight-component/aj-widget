@@ -7,10 +7,10 @@
   "homepage": "https://framework.ajaxjs.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sp42/ajaxjs/tree/master/aj-ui/aj-ui-widget/aj"
+    "url": "https://github.com/lightweight-component/aj-widget"
   },
   "bugs": {
-    "url": "https://github.com/sp42/ajaxjs/issues"
+    "url": "https://github.com/lightweight-component/aj-widget/issues"
   },
   "scripts": {
     "dev": "vue-cli-service serve",
