@@ -1,4 +1,3 @@
-import * as sys_config from './util/system/config';
 import * as util from './util/utils';
 import { setBaseHeadParams } from './util/xhr';
 import { xhr_get, xhr_post, xhr_put, xhr_del } from './util/xhr';
@@ -7,7 +6,6 @@ import OpacityBanner from "@/widget/OpacityBanner.vue";
 import ProcessLine from "@/widget/ProcessLine.vue";
 import AccordionMenu from "@/widget/AccordionMenu.vue";
 import Expander from "@/widget/Expander.vue";
-import BaiduSearch from "@/widget/BaiduSearch.vue";
 import HtmlEditor from "@/widget/HtmlEditor/HtmlEditor.vue";
 import FileUploader from "@/widget/FileUploader/FileUploader.vue";
 import Calendar from "@/widget/calendar/Calendar.vue";
@@ -22,8 +20,6 @@ let API_BASE_URL: string;
  * 暴露各个组件
  */
 export default {
-    system: sys_config,
-
     /**
      * 设置 API 统一前缀
      * 
@@ -50,5 +46,5 @@ export default {
         xhr_get, xhr_post, xhr_put, xhr_del
     },
 
-    OpacityBanner, ProcessLine, AccordionMenu, Expander, BaiduSearch, Article, HtmlEditor, FileUploader, Calendar
+    OpacityBanner, ProcessLine, AccordionMenu, Expander, Article, HtmlEditor, FileUploader, Calendar
 };
