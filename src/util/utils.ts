@@ -15,6 +15,13 @@ export function isDebug(): boolean {
     return env === 'development';
 }
 
+export function isDev(): boolean {
+    let currentHostname: string = window.location.hostname;
+
+    // 判断主机名是否是内网地址
+    return (currentHostname.startsWith('192.168.') || currentHostname.startsWith('10.') || currentHostname === 'localhost');
+}
+
 /**
 * 日期格式化。详见博客文章：http://blog.csdn.net/zhangxin09/archive/2011/01/01/6111294.aspx
 * e.g: new Date().format("yyyy-MM-dd hh:mm:ss")
@@ -147,4 +154,31 @@ export function throttle(fn: Function, delay: number, mustRunDelay: number): Fun
             timer = window.setTimeout(() => fn.apply(this, args), delay);
         }
     };
+}
+
+/**
+* 复制文字到剪切板
+* 
+* @param {*} text 
+*/
+export function copyToClipboard(text) {
+    if (navigator.clipboard) {
+        // clipboard api 复制
+        navigator.clipboard.writeText(text);
+    } else {
+        let textarea = document.createElement('textarea');
+        document.body.appendChild(textarea);
+        // 隐藏此输入框
+        textarea.style.position = 'fixed';
+        textarea.style.clip = 'rect(0 0 0 0)';
+        textarea.style.top = '10px';
+        // 赋值
+        textarea.value = text;
+        // 选中
+        textarea.select();
+        // 复制
+        document.execCommand('copy', true);
+        // 移除输入框
+        document.body.removeChild(textarea);
+    }
 }
