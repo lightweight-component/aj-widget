@@ -1,21 +1,21 @@
 {
   "name": "@ajaxjs/util",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Real ajaxjs ui library",
   "main": "dist/index.js",
   "types": "dist/libs/common.d.ts",
   "homepage": "https://framework.ajaxjs.com/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lightweight-component/aj-widget"
+    "url": "https://github.com/lightweight-component/js-utils"
   },
   "bugs": {
-    "url": "https://github.com/lightweight-component/aj-widget/issues"
+    "url": "https://github.com/lightweight-component/js-utils/issues"
   },
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "release": "tsc && xcopy src\\widget dist\\widget /s /y /d && copy src\\*.d.ts dist\\ && npm publish"
+    "release": "tsc && xcopy src\\widget dist\\widget /s /y /d && copy src\\*.d.ts dist\\ && xcopy src\\style dist\\style /s /y /d && npm publish"
   },
   "keywords": [
     "ajaxjs"
