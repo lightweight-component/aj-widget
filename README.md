@@ -10,7 +10,7 @@
 
 A few widgets, vue.js + typescript + less.js. Just using Vue 2, without other 3rd library.
 
-NPM: https://www.npmjs.com/package/@ajaxjs/util
+NPM: https://www.npmjs.com/package/@ajaxjs/util.
 
 
     npm i @ajaxjs/util # install
