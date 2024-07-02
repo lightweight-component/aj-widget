@@ -8,7 +8,7 @@
 
 # JS Utils & a Simple Widget Library 
 
-A few widgets, vue.js + typescript + less.js
+A few widgets, vue.js + typescript + less.js. Just using Vue 2, without other 3rd library.
 
 NPM: https://www.npmjs.com/package/@ajaxjs/util
 
