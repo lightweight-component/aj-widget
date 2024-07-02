@@ -12,6 +12,8 @@ A few widgets, vue.js + typescript + less.js
 
 NPM: https://www.npmjs.com/package/@ajaxjs/util
 
-## Install
 
-    npm i @ajaxjs/util
+    npm i @ajaxjs/util # install
+    npm run dev # do coding
+    npm run build # output js
+    npm run release # deploy to NPM
