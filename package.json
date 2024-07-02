@@ -1,6 +1,6 @@
 {
-  "name": "@ajaxjs/ui",
-  "version": "1.1.9",
+  "name": "@ajaxjs/util",
+  "version": "1.1.0",
   "description": "Real ajaxjs ui library",
   "main": "dist/index.js",
   "types": "dist/libs/common.d.ts",
@@ -22,8 +22,9 @@
   ],
   "author": "sp42 <sp42@qq.com>",
   "license": "Apache License 2.0",
+  "private": false,
   "files": [
-    "dist/"
+    "dist"
   ],
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
